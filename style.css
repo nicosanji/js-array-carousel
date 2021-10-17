@@ -1,0 +1,92 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ---- TAG ---- */
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 28px;
+}
+
+/* ---- CLASSI ---- */
+
+/* Container Principale */
+.my-container{
+    width: 1300px;
+    height: 600px;
+    display: flex;
+    margin: 100px auto;
+}
+
+/* Container immagine grande */
+.img-big-box {
+    width: 80%;
+    height: 100% ;
+    position: relative;
+    text-align: right;
+    color: white;
+}
+
+/* Container testo "su" immagine grande */
+.text-box {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Container lista immagini piccole dx */
+.imgs-list-box {
+    position: relative;
+    width: 20%;
+}
+
+/* Immagini piccole nel container dx (da inserire) */
+.img-list-item {
+    height: calc(100%  / 5);
+    background-color: black;
+    filter: brightness(40%);
+}
+
+
+/* Container Icone/Frecce */
+.icons {
+    padding: 0 7px;
+    font-size: 50px;
+    background-color: rgba(211, 211, 211, 0.85);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+/* Freccia in su */
+.icon-top {
+    top: 10px;
+}
+
+/* Freccia in giù */
+.icon-bottom {
+    bottom: 10px;
+}
+
+/* Stile/Posizione icone */
+.fa-chevron-up {
+    vertical-align: top;
+}
+.fa-chevron-down {
+    vertical-align: bottom;
+}
+
+/* UTILITY 1 (classe active da "spostare" al click) */
+.active {
+    filter: brightness(100%);
+    border: 5px solid lightgray;
+}
