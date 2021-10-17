@@ -30,6 +30,16 @@
 
 }
 
+
+/* Selettore (speciale) collegato a JavaScript */
+
+.my-big-img img.active, .my-big-img-title .container-text.active {
+
+    opacity: 1;
+
+}
+
+
 /* COLONNA DI DX (Lista immagini piccole + frecce con funzione up/down) */
 
 .my-list-img img {
