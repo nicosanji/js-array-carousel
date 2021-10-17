@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link BootStrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- link FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- link Css -->
     <link rel="stylesheet" href="style.css">
     <title>JS ARRAY CAROUSEL</title>
 </head>
@@ -15,11 +18,48 @@
 <body>
 
     <main>
+        <!-- Contenitore Principale -->
+        <div class="container">
+            <div class="row">
 
+                <!-- Colonna Di SX = img grande (selezionata) -->
+                <div class="col-10 p-0">
+                    <!-- (Contenitore Img Grande) = qui viene mostrata l'immagine GRANDE -->
+                    <div class="my-big-img position-relative">
+                        <!-- (JS) qui ci sarà un TAG o + inseriti tramite JavaScript -->
+                        <div class="my-big-img-title">
+                            <!-- (JS) qui ci sarà un TAG o + inseriti tramite JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonna Di DX = lista img piccole (da selezionare con le frecce)-->
+                <div class="col-2 p-0">
+                    <!-- (Contenitore Lista Img Piccole) = quì sono mostrate tutte le immagini PICCOLE -->
+                    <div class="side-carousel position-relative h-100">
+                        <!-- quì ci sarà un TAG o + inseriti tramite JavaScript -->
+
+                        <!-- Contenitore delle icone = frecce (up/down) che avranno la funzione di spostare le immagini al click -->
+                        <div class="icon-box">
+                            <!-- Freccia UP = (sposta su) -->
+                            <div class="icon-box-up">
+                                <i class="fas fa-arrow-alt-circle-up"></i>
+                            </div>
+                            <!-- Freccia DOWN = (sposta giù) -->
+                            <div class="icon-box-down">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
     <footer>
+        <!-- link JavaScript -->
         <script src="script.js"></script>
     </footer>
 
