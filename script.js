@@ -34,7 +34,7 @@ const imgsListBox = document.querySelector(".imgs-list-box");
 // CICLO per inserire tutti e 3 gli arrays con gli indici per ogni elemento
 for (let i = 0; i < items.length; i++) {
     // recupero & dichiaro da html -> Immagini piccole nel container dx
-    const imgListItem = `<div class="img-list-item ${i === 0 ? "active" : ""}"><img src=${items[i]} alt=${title[i]}-img></img></div>`;
+    const imgListItem = `<div class="img-list-item ${i === 0 ? "active" : ""}"><img src=${items[i]} alt=${title[i]}></img></div>`;
     // inserisco nel html
     imgsListBox.innerHTML += imgListItem;
 }
